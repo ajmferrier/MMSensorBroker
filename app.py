@@ -24,7 +24,7 @@ mqtcc.on_publish = on_publish
 mqtcc.on_subscribe = on_subscribe
 
 # Uncomment to allow debug messages
-#mqttc.on_log = on_log
+mqttc.on_log = on_log
 
 # Parse CLOUDMQTT_URL or default to localhost
 url_str = os.environ.get('CLOUDMQTT_URL', 'mqtt://localhost:1883')
